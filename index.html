@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1>Music Player</h1>
+    <div id="playerContainer" class="playerContainer">
+        <img id="image" src="./02 Pastorale.jpg" alt="" class="animate animationPause">
+        <div class="cd"></div>
+        <div class="audio">
+            <audio id="audio">
+                <!-- <source id="audioSource" src="./02 Pastorale.mp3" type="audio/mpeg">
+                Your browser does not support the audio element. -->
+            </audio>
+            <div id="play" class="controller" onclick="playThat()"><i class="fa fa-play"></i></div>
+            <div id="pause" class="controller hidden" onclick="pauseThat()"><i class="fa fa-pause"></i></div>
+            <div id="next" class="controller"><i class="fa fa-forward" onclick="nextTrack()"></i></div>
+            <div id="previous" class="controller"><i class="fa fa-backward" onclick="previousTrack()"></i></div>
+        </div>
+
+        <div id="info" class="info ">
+            <div class="infoBack"></div>
+            <h5 id="tarckName"></h5>
+            <input type="range" id="seek" max="100" value="0">
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
